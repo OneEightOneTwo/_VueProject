@@ -4,9 +4,16 @@ import VueRouter from 'vue-router'
 Vue.use(VueRouter)
 //首页
 import home from '../pages/home.vue'
+//登录页
+import login from '../pages/login.vue'
 
 //定义
-const routes = [{ path: '/home', component: home, name: 'home' }]
+const routes = [
+    { path: '/home', component: home, name: 'home' },
+    { path: '/login', component: login, name: 'login' },
+    // 设置默认重定向
+    { path: '/', redirect: '/home' }
+]
 // 实例化路由
 const router = new VueRouter({
     routes
