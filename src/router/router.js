@@ -7,6 +7,8 @@ import home from '../pages/home.vue'
 //登录页
 import login from '../pages/login.vue'
 
+
+
 //定义
 const routes = [
     { path: '/home', component: home, name: 'home' },
