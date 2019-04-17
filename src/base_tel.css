@@ -24,3 +24,12 @@ a:hover{
 	text-decoration:underline;}
 i{font-style:normal;}
 *{box-sizing:border-box;}
+
+.clearfix:before,.clearfix:after {  /*清楚浮动*/
+    content:"";
+    display:table;
+}
+.clearfix:after{clear:both;}
+.clearfix{
+    *zoom:1;/*IE/7/6*/
+}

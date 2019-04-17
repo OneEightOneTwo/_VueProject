@@ -6,11 +6,13 @@ Vue.use(VueRouter)
 import home from '../pages/home.vue'
 //登录页
 import login from '../pages/login.vue'
-
+//登陆之后的主页头部
+import header from '../components/xheader.vue'
 //定义
 const routes = [
     { path: '/home', component: home, name: 'home' },
     { path: '/login', component: login, name: 'login' },
+    { path: '/header', component: header, name: 'xheader' },
     // 设置默认重定向
     { path: '/', redirect: '/home' }
 ]
