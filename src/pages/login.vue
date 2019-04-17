@@ -8,10 +8,15 @@
     </header>
     <div class="zc">
       <p>
-        <input type="button" value="登陆">
+        <span>账号</span>
+        <input type="text" style="padding-left: 1.573333rem;">
       </p>
       <p>
-        <input type="button" value="注册">
+        <span>密码</span>
+        <input type="password" style="padding-left: 1.573333rem;">
+      </p>
+      <p>
+        <input type="button" value="登陆">
       </p>
     </div>
     <div class="xiahua">
@@ -46,7 +51,7 @@ body {
   height: 100%;
 }
 body {
-  background: url(../assets/img/02.jpg) no-repeat -250px ;
+  background: url(../assets/img/02.jpg) no-repeat -250px;
   background-size: cover;
 }
 .login {
@@ -59,12 +64,12 @@ li {
   list-style: none;
 }
 header {
-  height: 8.973333rem;
+  height: 5.333333rem;
   /* background: pink; */
   flex: 1;
 }
 header a {
-  margin-top: 1.733333rem;
+  margin-top: 1.666667rem;
   margin-left: 3.64rem;
   border-radius: 50%;
   display: block;
@@ -79,29 +84,48 @@ header a img {
 }
 .zc {
   flex: 1;
-  height: 2.666667rem;
+  height: 5.226667rem;
   padding: 0 0.306667rem;
+  margin-top: 1.173333rem;
 }
 .tt {
   font-size: 0.573333rem;
   text-align: center;
   color: #fff;
   margin-top: 0.36rem;
+  padding-bottom: 1.293333rem;
 }
 .zc input {
   width: 100%;
   height: 1.2rem;
-  background: #c8462e;
+  background: none;
   border: 0;
   border-radius: 0.52rem;
   font-size: 0.453333rem;
   color: #fff;
-}
-.zc p:nth-of-type(2) input {
-  margin-top: 0.266667rem;
-  background: none;
-  box-sizing: border-box;
   border: 0.026667rem #c8462e solid;
+}
+.zc p {
+  position: relative;
+  width: 100%;
+  height: 1.2rem;
+}
+.zc p:nth-of-type(1){
+    height: 1.466667rem;
+}
+.zc p span {
+  position: absolute;
+  top:0.293333rem;
+  left: 0.506667rem;
+  font-size: 0.48rem;
+  color: #fff;
+}
+
+.zc p:nth-of-type(3) input {
+  margin-top: 1.28rem;
+  background: #c8462e;
+  box-sizing: border-box;
+  border: none;
 }
 .xiahua {
   position: relative;
