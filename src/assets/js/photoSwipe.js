@@ -24,7 +24,11 @@ window.onload = function () {
         load: false,
         /*初始化*/
         init: function () {
+            window.onload = function(){
+
+            
             document.querySelector("#photo_box>div>div").innerHTML = this.imgHtml();
+        }
         },
         /*图片HTML*/
         imgHtml: function () {
