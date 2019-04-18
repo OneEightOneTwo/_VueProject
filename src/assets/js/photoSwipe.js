@@ -24,18 +24,11 @@ window.onload = function () {
         load: false,
         /*初始化*/
         init: function () {
-<<<<<<< HEAD
-            window.onload=function(){
-                document.querySelector("#photo_box>div>div").innerHTML = this.imgHtml();
-            }
-            
-=======
             window.onload = function(){
 
             
             document.querySelector("#photo_box>div>div").innerHTML = this.imgHtml();
         }
->>>>>>> 109acf1d82c0f6858c6dc9c0b2e637ee9f9f9b5b
         },
         /*图片HTML*/
         imgHtml: function () {
