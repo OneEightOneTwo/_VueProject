@@ -38,9 +38,9 @@
   </div>
 </template>
 <script>
-import base from "../base_tel.css";
+import base from '../base_tel.css';
 export default {
-  data() {
+  data(){
     return {};
   }
 };
