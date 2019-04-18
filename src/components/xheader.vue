@@ -11,7 +11,7 @@
             <a href="javascrit:;">
                 <img src="../assets/img/gantan.png" alt="">
             </a>
-        </header>   
+        </header>
 
         <!-- 滑动 -->
         <div id="photo_box">

@@ -34,3 +34,6 @@ i{font-style:normal;}
 .clearfix{
     *zoom:1;/*IE/7/6*/
 }
+#app{
+	height: 100%;
+}

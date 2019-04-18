@@ -19,6 +19,7 @@ html,body{
     left: 0;
     width: 100vw;
     height:14.8rem;
+    overflow: hidden;
 }
 #photo_box>div{
     padding: .2rem;
