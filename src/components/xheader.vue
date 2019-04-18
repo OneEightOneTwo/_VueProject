@@ -1,8 +1,8 @@
 <template>
-    <div>
+    <div class="Bigbox">
         <header>
         <!-- 左图标 -->
-            <a href="javascrit:;">
+            <a class="header-a" href="javascrit:;">
                 <img src="../assets/img/user.png" alt="">
             </a>
             <!-- 中间图标 -->
@@ -13,13 +13,14 @@
             </a>
         </header>   
 
+        <!-- 滑动 -->
         <div id="photo_box">
             <div><div>
             </div></div>
         </div>
 
         <footer>
-
+            <bottom></bottom>
         </footer>
     </div>   
 </template>
@@ -29,24 +30,40 @@ import base from "../base_tel.css";
 import phone from "..//assets/css/photoSwipe.css";
 import phone1 from "..//assets/js/jquery-3.1.1.min.js";
 import phone2 from "../assets/js/photoSwipe.js";
-export default {};
+import bottom from "./bottom.vue";
+export default {
+    components:{
+        bottom
+    }
+};
 </script>
 <style>
+.Bigbox{
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+}
 header {
   width: 100%;
-  height: 90px;
+  height: 1.28rem;
   background: #d74e37;
-  padding: 0 5px 0 5px;
+  padding: 0 .077777rem 0 .077777rem;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-between; 
+}
+.header-a{
+    width: 0.933333rem;
+    height: 0.933333rem;
 }
 img {
-  width: 50px;
-  height: 50px;
+  width: 85%;
+  height: 90%;
 }
 a {
-  font-size: 36px;
+  font-size: .48rem;
   color: #fff;
 }
+
 </style>

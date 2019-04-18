@@ -45,7 +45,9 @@ export default {
 </script>
 <style>
 div {
-  height: 1.28rem;
+  /* height: 1.28rem; */
+  /* overflow: hidden; */
+
 }
 nav {
   height: 1.28rem;
