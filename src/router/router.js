@@ -9,11 +9,15 @@ import login from '../pages/login.vue'
 
 import home from '../components/xheader.vue'
 
+// 测试
+import ceshi from '../components/userinfo.vue'
+
 //定义
 const routes = [
     // { path: '/home', component: home, name: 'home' },
     { path: '/login', component: login, name: 'login' },
     { path: '/home', component: home, name: 'xheader' },
+    { path: '/ceshi', component: ceshi, name: 'ceshi' },
     // 设置默认重定向
     { path: '/', redirect: '/home' }
 ]

@@ -24,20 +24,23 @@ window.onload = function () {
         load: false,
         /*初始化*/
         init: function () {
-            document.querySelector("#photo_box>div>div").innerHTML = this.imgHtml();
+            window.onload=function(){
+                document.querySelector("#photo_box>div>div").innerHTML = this.imgHtml();
+            }
+            
         },
         /*图片HTML*/
         imgHtml: function () {
             var str = '<div id="ind-' + this.index + '">'
                 + '<div class="div1">第' + (this.index + 1) + '个</div>'
-                // + '<div style="padding-top: 20px;color: #d01d33;font-weight: bold;">本demo只支持移动端</div>'
-                // + '<div style="padding-top: 20px">左右滑动试试</div>'
-                // + '<div style="padding-top: 20px">本demo仅实现滑动效果</div>'
-                // + '<div style="padding-top: 20px">数据交互相关代码请各位自行添加</div>'
-                // + '<div style="padding-top: 20px">如何修改请查看文件源码(未压缩)</div>'
-                // + '<div style="padding-top: 20px">适用浏览器：360、FireFox、Chrome、Safari、Opera、傲游、搜狗、世界之窗. 不支持IE8及以下浏览器。</div>'
-                // + '<div style="padding-top: 20px">来源：<a href="http://www.lanrenzhijia.com/" target="_blank">懒人</a></div>'
-                // + '</div>';
+            // + '<div style="padding-top: 20px;color: #d01d33;font-weight: bold;">本demo只支持移动端</div>'
+            // + '<div style="padding-top: 20px">左右滑动试试</div>'
+            // + '<div style="padding-top: 20px">本demo仅实现滑动效果</div>'
+            // + '<div style="padding-top: 20px">数据交互相关代码请各位自行添加</div>'
+            // + '<div style="padding-top: 20px">如何修改请查看文件源码(未压缩)</div>'
+            // + '<div style="padding-top: 20px">适用浏览器：360、FireFox、Chrome、Safari、Opera、傲游、搜狗、世界之窗. 不支持IE8及以下浏览器。</div>'
+            // + '<div style="padding-top: 20px">来源：<a href="http://www.lanrenzhijia.com/" target="_blank">懒人</a></div>'
+            // + '</div>';
             return str;
         },
         /*移动动画*/
