@@ -14,23 +14,23 @@
     </div>
 </template>
 <script>
-import base from "../base_tel.css";
-import icon from "../assets/font_c8tqywfudtn/iconfont.css";
+import base from '../base_tel.css';
+import icon from '../assets/font_c8tqywfudtn/iconfont.css';
 export default {
   data() {
     return {
       icons: [
         {
-          class: "iconfont icon icon-tantan"
+          class: 'iconfont icon icon-tantan'
         },
         {
-          class: "iconfont icon icon-liaotian"
+          class: 'iconfont icon icon-liaotian'
         },
         {
-          class: "iconfont icon icon-dingwei"
+          class: 'iconfont icon icon-dingwei'
         },
         {
-          class: "iconfont icon icon-wode"
+          class: 'iconfont icon icon-wode'
         }
       ],
       active: 0
