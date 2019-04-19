@@ -38,7 +38,7 @@
   </div>
 </template>
 <script>
-import base from '../base_tel.css';
+import base from '../base_tel.css'
 export default {
   data() {
     return {}
@@ -108,12 +108,12 @@ header a img {
   width: 100%;
   height: 1.2rem;
 }
-.zc p:nth-of-type(1){
-    height: 1.466667rem;
+.zc p:nth-of-type(1) {
+  height: 1.466667rem;
 }
 .zc p span {
   position: absolute;
-  top:0.293333rem;
+  top: 0.293333rem;
   left: 0.506667rem;
   font-size: 0.48rem;
   color: #fff;

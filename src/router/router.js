@@ -9,14 +9,19 @@ import home from '../pages/home.vue'
 //首页下的子页
 import chat from '../pages/chat.vue'
 import tantan from '../pages/tantan.vue'
+import dis from '../pages/discover.vue'
+import userinfo from '../pages/userinfo.vue'
+
 //定义
 const routes = [
     // { path: '/home', component: home, name: 'home' },
     {
          path: '/home', component: home, name: 'home',
          children: [
-            { path: 'chat', component: chat, name: 'chat', },
-            { path: 'tantan', component: tantan, name: 'tantan', }
+            { path: 'chat', component: chat, name: 'chat'},
+            { path: 'tantan', component: tantan, name: 'tantan' },
+            { path: 'dis', component: dis, name: 'discover' },
+            { path: 'userinfo', component: userinfo, name: 'userinfo' }
         ]
         },
     { path: '/login', component: login, name: 'login' },

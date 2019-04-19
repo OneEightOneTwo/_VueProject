@@ -2,7 +2,7 @@
     <div class="btt">
         <nav>
             <li v-for="(ic,idx) in icons" :class="{active:idx===active}" @click="Active(idx)">
-                <a href="javascript:;"  :class="ic.class">
+                <a   :class="ic.class">
                     <!-- <i class="iconfont icon icon-tantan"></i> -->
                 </a>
             </li>
@@ -34,7 +34,7 @@ export default {
         },
         {
           class: 'iconfont icon icon-wode',
-           name: "mine"
+           name: "userinfo"
         }
       ],
       active: 0
