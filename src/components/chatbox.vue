@@ -1,7 +1,7 @@
 <template>
     <div class="chatbox">
         <header>  
-            <img class="back" src="../assets/img/back.png" alt="">
+            <img class="back" src="../assets/img/back.png" alt="" @click = 'change'>
         </header>
         <div class="ul">
             <li>
@@ -79,7 +79,18 @@
 <script>
 import base from "../base_tel.css";
 
-export default {};
+export default {
+    data(){
+        return {
+            id:1
+        }
+    },
+    methods:{
+        change(){
+            this.$router.push({path:'/home'});
+        }
+    }
+};
 </script>
 <style>
 .chatbox {
