@@ -10,7 +10,7 @@ import login from '../pages/login.vue'
 import home from '../components/xheader.vue'
 
 // 测试
-import ceshi from '../components/userinfo.vue'
+import ceshi from '../components/discover.vue'
 
 //定义
 const routes = [

@@ -1,17 +1,17 @@
 <template>
     <div>
-        <userinfo></userinfo>
+        <discover></discover>
     </div>
 </template>
 
 <script>
-import bottom from "../components/userinfo.vue";
+import discover from "../components/discover.vue";
 export default {
   components: {
-    userinfo
+    discover
   }
 };
 </script>
 
-<style>
+<style scoped>
 </style>

@@ -1,8 +1,8 @@
 <template>
     <div>
-        <nav  >
+        <nav>
             <li v-for="(ic,idx) in icons" :class="{active:idx===active}" @click="Active(idx)">
-                <a href="javascript:;"  :class="ic.class">
+                <a   :class="ic.class">
                     <!-- <i class="iconfont icon icon-tantan"></i> -->
                 </a>
             </li>
@@ -14,23 +14,23 @@
     </div>
 </template>
 <script>
-import base from '../base_tel.css';
-import icon from '../assets/font_c8tqywfudtn/iconfont.css';
+import base from "../base_tel.css";
+import icon from "../assets/font_c8tqywfudtn/iconfont.css";
 export default {
   data() {
     return {
       icons: [
         {
-          class: 'iconfont icon icon-tantan'
+          class: "iconfont icon icon-tantan"
         },
         {
-          class: 'iconfont icon icon-liaotian'
+          class: "iconfont icon icon-liaotian"
         },
         {
-          class: 'iconfont icon icon-dingwei'
+          class: "iconfont icon icon-dingwei"
         },
         {
-          class: 'iconfont icon icon-wode'
+          class: "iconfont icon icon-wode"
         }
       ],
       active: 0
@@ -43,12 +43,7 @@ export default {
   }
 };
 </script>
-<style>
-div {
-  /* height: 1.28rem; */
-  /* overflow: hidden; */
-
-}
+<style scoped>
 nav {
   height: 1.28rem;
   background: #be3a2d;

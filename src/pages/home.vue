@@ -5,7 +5,7 @@
 </template>
 
 <script>
-import bottom from '../components/bottom.vue';
+import bottom from "../components/bottom.vue";
 export default {
   components: {
     bottom
@@ -13,7 +13,7 @@ export default {
 };
 </script>
 
-<style>
+<style scoped>
 </style>
 
 
