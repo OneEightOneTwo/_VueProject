@@ -2,20 +2,26 @@ import Vue from 'vue'
 import VueRouter from 'vue-router'
 // 模块化必须显式使用Vue.use来加载路由功能
 Vue.use(VueRouter)
-//首页
-// import home from '../pages/home.vue'
 //登录页
 import login from '../pages/login.vue'
-
-import home from '../components/xheader.vue'
-
+//首页
+import home from '../pages/home.vue'
+//首页下的子页
+import chat from '../pages/chat.vue'
+import tantan from '../pages/tantan.vue'
 //定义
 const routes = [
     // { path: '/home', component: home, name: 'home' },
+    {
+         path: '/home', component: home, name: 'home',
+         children: [
+            { path: 'chat', component: chat, name: 'chat', },
+            { path: 'tantan', component: tantan, name: 'tantan', }
+        ]
+        },
     { path: '/login', component: login, name: 'login' },
-    { path: '/home', component: home, name: 'xheader' },
     // 设置默认重定向
-    { path: '/', redirect: '/home' }
+    { path: '/', redirect: '/home/tantan' }
 ]
 // 实例化路由
 const router = new VueRouter({

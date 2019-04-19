@@ -40,12 +40,12 @@
 <script>
 import base from '../base_tel.css';
 export default {
-  data(){
-    return {};
+  data() {
+    return {}
   }
-};
+}
 </script>
-<style>
+<style scoped>
 html,
 body {
   height: 100%;
@@ -64,9 +64,8 @@ li {
   list-style: none;
 }
 header {
-  height: 5.333333rem;
+  height: 6.633333rem;
   /* background: pink; */
-  flex: 1;
 }
 header a {
   margin-top: 1.666667rem;
@@ -83,10 +82,9 @@ header a img {
   height: 100%;
 }
 .zc {
-  flex: 1;
-  height: 5.226667rem;
+  height: 6.226667rem;
   padding: 0 0.306667rem;
-  margin-top: 1.173333rem;
+
 }
 .tt {
   font-size: 0.573333rem;
@@ -129,7 +127,7 @@ header a img {
 }
 .xiahua {
   position: relative;
-  height: 2.426667rem;
+  height: 1.426667rem;
   width: 100%;
   padding: 0 0.306667rem;
 }
@@ -137,7 +135,6 @@ header a img {
   font-size: 0.453333rem;
   color: #c8462e;
   text-align: center;
-  margin-top: 1.306667rem;
   position: relative;
   padding: 0 0.306667rem;
 }
@@ -146,20 +143,19 @@ header a img {
   position: absolute;
   height: 0.026667rem;
   background: #c8462e;
-  width: 3.093333rem;
-  z-index: -1;
+  width: 3.023333rem;
+  z-index: 1;
 }
 .xiahua span:nth-of-type(1) {
-  top: 1.546667rem;
+  top: 0.22rem;
   left: 0.346667rem;
 }
 .xiahua span:nth-of-type(2) {
-  top: 1.546667rem;
+  top: 0.22rem;
   right: 0.346667rem;
 }
 .san {
   width: 100%;
-  margin-top: 0.6rem;
   text-align: center;
 }
 .san a {
@@ -174,5 +170,3 @@ header a img {
   height: 100%;
 }
 </style>
-
-

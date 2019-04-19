@@ -1,6 +1,6 @@
 <template>
-    <div>
-        <nav  >
+    <div class="btt">
+        <nav>
             <li v-for="(ic,idx) in icons" :class="{active:idx===active}" @click="Active(idx)">
                 <a href="javascript:;"  :class="ic.class">
                     <!-- <i class="iconfont icon icon-tantan"></i> -->
@@ -14,40 +14,45 @@
     </div>
 </template>
 <script>
-import base from '../base_tel.css';
-import icon from '../assets/font_c8tqywfudtn/iconfont.css';
+import base from '../base_tel.css'
+import icon from '../assets/font_c8tqywfudtn/iconfont.css'
 export default {
   data() {
     return {
       icons: [
         {
-          class: 'iconfont icon icon-tantan'
+          class: 'iconfont icon icon-tantan',
+          name: "tantan"
         },
         {
-          class: 'iconfont icon icon-liaotian'
+          class: 'iconfont icon icon-liaotian',
+           name: "chat"
         },
         {
-          class: 'iconfont icon icon-dingwei'
+          class: 'iconfont icon icon-dingwei',
+           name: "discover"
         },
         {
-          class: 'iconfont icon icon-wode'
+          class: 'iconfont icon icon-wode',
+           name: "mine"
         }
       ],
       active: 0
-    };
+    }
   },
   methods: {
     Active(idx) {
-      this.active = idx;
+      this.active = idx
+        let name = this.icons[idx].name
+      // 跳路由
+      this.$router.push({ name })
     }
   }
-};
+}
 </script>
-<style>
-div {
-  /* height: 1.28rem; */
-  /* overflow: hidden; */
-
+<style scoped>
+.btt{
+  height: 1.28rem;
 }
 nav {
   height: 1.28rem;
@@ -83,5 +88,3 @@ nav li a:hover {
   color: #e96e33;
 }
 </style>
-
-
