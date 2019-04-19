@@ -6,14 +6,17 @@ Vue.use(VueRouter)
 // import home from '../pages/home.vue'
 //登录页
 import login from '../pages/login.vue'
-
+//主页
 import home from '../components/xheader.vue'
+//聊天页面
+import chatbox from '../components/chatbox.vue'
 
 //定义
 const routes = [
     // { path: '/home', component: home, name: 'home' },
     { path: '/login', component: login, name: 'login' },
     { path: '/home', component: home, name: 'xheader' },
+    { path: '/chatbox', component: chatbox, name: 'chatbox' },
     // 设置默认重定向
     { path: '/', redirect: '/home' }
 ]
