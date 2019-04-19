@@ -6,8 +6,10 @@ Vue.use(VueRouter)
 // import home from '../pages/home.vue'
 //登录页
 import login from '../pages/login.vue'
-
+//主页
 import home from '../components/xheader.vue'
+//聊天页面
+import chatbox from '../components/chatbox.vue'
 
 // 测试
 import ceshi from '../components/discover.vue'
@@ -17,7 +19,11 @@ const routes = [
     // { path: '/home', component: home, name: 'home' },
     { path: '/login', component: login, name: 'login' },
     { path: '/home', component: home, name: 'xheader' },
+<<<<<<< HEAD
     { path: '/ceshi', component: ceshi, name: 'ceshi' },
+=======
+    { path: '/chatbox', component: chatbox, name: 'chatbox' },
+>>>>>>> 460c58d54630ca73a85b570f7ebc89b7c75b415a
     // 设置默认重定向
     { path: '/', redirect: '/home' }
 ]
